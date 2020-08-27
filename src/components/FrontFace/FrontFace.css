@@ -1,0 +1,13 @@
+.mainBackground {
+    background: linear-gradient(135deg, red, yellow);
+    height: 50rem;
+    margin-top: 5rem;
+    padding: 1rem;
+}
+
+.frontFace {
+    background-color: white;
+    /* width: 100%; */
+    height: 100%;
+    border-radius: 1rem;
+}

@@ -1,0 +1,38 @@
+.dropdown_bread {
+    display: grid;
+    grid-template-columns: repeat(4, max-content);
+    justify-content: center;
+    /* justify-items: center; */
+}
+
+.dropdown {
+    position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+
+}
+
+.dropdown-content{
+    display: none;
+  position: absolute;
+  min-width: 160px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  z-index: 1;
+}
+
+.dropdown_item {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.toppings_div {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

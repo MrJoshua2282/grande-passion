@@ -1,0 +1,13 @@
+.welcome-div {
+
+}
+
+.customize_invite {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.welcome-btn-div {
+    display: flex;
+    justify-content: space-evenly;
+}

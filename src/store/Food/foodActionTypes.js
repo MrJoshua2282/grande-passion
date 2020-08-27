@@ -1,0 +1,2 @@
+export const TOGGLE_IS_TOASTED = 'TOGGLE_IS_TOASTED';
+export const SET_BREAD_TYPE = 'SET_BREAD_TYPE';
