@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/grande-passion/static/css/main.9d0302eb.chunk.css",
+    "main.js": "/grande-passion/static/js/main.060a6ae5.chunk.js",
+    "main.js.map": "/grande-passion/static/js/main.060a6ae5.chunk.js.map",
+    "runtime-main.js": "/grande-passion/static/js/runtime-main.016e9456.js",
+    "runtime-main.js.map": "/grande-passion/static/js/runtime-main.016e9456.js.map",
+    "static/js/2.f534b9c3.chunk.js": "/grande-passion/static/js/2.f534b9c3.chunk.js",
+    "static/js/2.f534b9c3.chunk.js.map": "/grande-passion/static/js/2.f534b9c3.chunk.js.map",
+    "static/css/3.ed8ab026.chunk.css": "/grande-passion/static/css/3.ed8ab026.chunk.css",
+    "static/js/3.9f1c2479.chunk.js": "/grande-passion/static/js/3.9f1c2479.chunk.js",
+    "static/js/3.9f1c2479.chunk.js.map": "/grande-passion/static/js/3.9f1c2479.chunk.js.map",
+    "static/css/4.e7d522be.chunk.css": "/grande-passion/static/css/4.e7d522be.chunk.css",
+    "static/js/4.fd4afa8d.chunk.js": "/grande-passion/static/js/4.fd4afa8d.chunk.js",
+    "static/js/4.fd4afa8d.chunk.js.map": "/grande-passion/static/js/4.fd4afa8d.chunk.js.map",
+    "static/css/5.13eac377.chunk.css": "/grande-passion/static/css/5.13eac377.chunk.css",
+    "static/js/5.258302d7.chunk.js": "/grande-passion/static/js/5.258302d7.chunk.js",
+    "static/js/5.258302d7.chunk.js.map": "/grande-passion/static/js/5.258302d7.chunk.js.map",
+    "static/css/6.7b8afce1.chunk.css": "/grande-passion/static/css/6.7b8afce1.chunk.css",
+    "static/js/6.a097e7b0.chunk.js": "/grande-passion/static/js/6.a097e7b0.chunk.js",
+    "static/js/6.a097e7b0.chunk.js.map": "/grande-passion/static/js/6.a097e7b0.chunk.js.map",
+    "index.html": "/grande-passion/index.html",
+    "precache-manifest.5e90a919ba82b86bd6c362dd4512a928.js": "/grande-passion/precache-manifest.5e90a919ba82b86bd6c362dd4512a928.js",
+    "service-worker.js": "/grande-passion/service-worker.js",
+    "static/css/3.ed8ab026.chunk.css.map": "/grande-passion/static/css/3.ed8ab026.chunk.css.map",
+    "static/css/4.e7d522be.chunk.css.map": "/grande-passion/static/css/4.e7d522be.chunk.css.map",
+    "static/css/5.13eac377.chunk.css.map": "/grande-passion/static/css/5.13eac377.chunk.css.map",
+    "static/css/6.7b8afce1.chunk.css.map": "/grande-passion/static/css/6.7b8afce1.chunk.css.map",
+    "static/css/main.9d0302eb.chunk.css.map": "/grande-passion/static/css/main.9d0302eb.chunk.css.map",
+    "static/js/2.f534b9c3.chunk.js.LICENSE.txt": "/grande-passion/static/js/2.f534b9c3.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.016e9456.js",
+    "static/js/2.f534b9c3.chunk.js",
+    "static/css/main.9d0302eb.chunk.css",
+    "static/js/main.060a6ae5.chunk.js"
+  ]
+}

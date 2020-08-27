@@ -1,0 +1,1 @@
+{"version":3,"sources":["Default.css"],"names":[],"mappings":"AAAA,WACI,iBAAkB,CAClB,gCACF,CAEA,QACE,aACF","file":"6.7b8afce1.chunk.css","sourcesContent":[".errorPage {\n    text-align: center;\n    font-family: var(--fontFamilyOne);\n  }\n  \n  .danger {\n    color: rgb(255, 56, 34);\n  }"]}

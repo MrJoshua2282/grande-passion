@@ -1,0 +1,2 @@
+(this["webpackJsonpgrande-passion"]=this["webpackJsonpgrande-passion"]||[]).push([[6],{52:function(e,a,n){},55:function(e,a,n){"use strict";n.r(a);var t=n(0),l=n.n(t);n(52);a.default=function(e){return l.a.createElement("div",{className:"errorPage"},l.a.createElement("h1",null,"404"),l.a.createElement("h1",null,"ERROR"),l.a.createElement("h2",null,"Page not found"),l.a.createElement("h2",null,"The requested url ",l.a.createElement("span",{className:"danger"},e.location.pathname)," was not found"))}}}]);
+//# sourceMappingURL=6.a097e7b0.chunk.js.map
