@@ -36,3 +36,22 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.price_and_quantity {
+  display: flex;
+  justify-content: center;
+}
+
+.price {
+  margin-right: 3rem;
+}
+
+.quantity {
+  padding-left: .25rem;
+  margin-left: 1rem;
+}
+
+.condiment_and_sandwich {
+  display: flex;
+  justify-content: space-evenly;
+}

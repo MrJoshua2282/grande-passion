@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import './FoodList.css';
@@ -8,12 +8,14 @@ import * as actionCreators from '../../store/globalCreators';
 import { BtnGrocery, CheckBoxCondiments, RadioToasted, DropDownListBtn } from '../../shared/Btns/Btns';
 
 export default function FoodList() {
+    const [quantity, setQuantity] = useState(1);
     // const storeShared = useSelector(store => store.shared);
     const storeFood = useSelector(store => store.food);
+    const storeShared = useSelector(store => store.shared);
     const dispatch = useDispatch();
 
     useEffect(() => {
-        console.log(storeFood)
+        console.log(storeFood, storeShared)
     })
 
     const breadDetails = storeFood.breadDetails.map(el => {
@@ -39,7 +41,7 @@ export default function FoodList() {
 
     const toppings = storeFood.toppings.map(el => {
         return (
-            <BtnGrocery key={`${el.id}`} removeItem={(id) => dispatch(actionCreators.removeItem(id = el.id))} addItem={(obj) => dispatch(actionCreators.addItem(obj = el))} >{el.name}</BtnGrocery>
+            <BtnGrocery key={`${el.id}`} removeItem={(id, priceOfBread) => dispatch(actionCreators.removeItem(id = el.id, priceOfBread = storeFood.typeOfBread.price))} addItem={(obj, priceOfBread) => dispatch(actionCreators.addItem(obj = el, priceOfBread = storeFood.typeOfBread.price))} >{el.name}</BtnGrocery>
         )
     })
 
@@ -57,10 +59,20 @@ export default function FoodList() {
             <div className='toppings_div'>
                 {toppings}
             </div>
-            <Breads >
-                <IngredientList />
-            </Breads>
-            {condiments}
+            <div className='price_and_quantity' >
+                <span className='price'>$Price: {storeShared.priceOfCurrentOrder * quantity}</span>
+
+                <label htmlFor='quantity' >Quantity</label>
+                <input className='quantity' id='quantity' type='number' value={quantity} onChange={(e) => {
+                    setQuantity(+e.target.value)
+                }} min='1' step='1' style={{ width: '2.5rem' }} />
+            </div>
+            <div className='condiment_and_sandwich'>
+                <div className='condiments'> {condiments} </div>
+                <Breads className='sandwich'> <IngredientList /> </Breads>
+            </div>
+
+
         </React.Fragment >
     )
 }

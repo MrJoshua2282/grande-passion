@@ -2,7 +2,10 @@ import * as actionTypes from '../globalTypes';
 
 const initialState = {
     currentOrder: [],
-    allOrders: []
+    priceOfCurrentOrder: 0,
+    allOrders: [],
+    priceOfAllOrders: 0,
+
 }
 
 const reducer = (state = initialState, action) => {
@@ -25,6 +28,13 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 currentOrder: state.currentOrder.filter(el => el.unique !== action.unique)
             };
+        case actionTypes.UPDATE_CURRENT_ORDER_PRICE:
+            let curPrice = action.priceOfBread || 0;
+            let reducedCost = state.currentOrder.reduce((acc, cur) => acc += cur.price, curPrice);
+            return {
+                ...state,
+                priceOfCurrentOrder: reducedCost
+            }
         default:
             return state;
     }

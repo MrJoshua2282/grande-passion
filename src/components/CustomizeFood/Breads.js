@@ -59,7 +59,7 @@ export default function Breads(props) {
             return '';
     }
     return (
-        <div>
+        <div className={props.className}>
             {topBread}
             {props.children}
             {bttmBread}

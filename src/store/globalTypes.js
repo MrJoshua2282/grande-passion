@@ -8,5 +8,6 @@ export { } from './Drink/drinkActionTypes';
 export {
     REMOVE_ITEM,
     ADD_ITEM,
-    DELETE_ITEM_SELECTED
+    DELETE_ITEM_SELECTED,
+    UPDATE_CURRENT_ORDER_PRICE
 } from './Shared/sharedActionTypes';

@@ -1,22 +1,34 @@
-import * as actionCreators from '../globalTypes';
+import * as actionTypes from '../globalTypes';
+//import * as actionCreators from '../globalCreators';
 
-export const removeItem = (id) => {
+export const updateCurrentOrderPrice = (priceOfBread) => {
     return {
-        type: actionCreators.REMOVE_ITEM,
-        id
+        type: actionTypes.UPDATE_CURRENT_ORDER_PRICE,
+        priceOfBread
     }
 }
 
-export const addItem = (obj) => {
+export const removeItem = (id, priceOfBread) => {
     return {
-        type: actionCreators.ADD_ITEM,
+        type: actionTypes.REMOVE_ITEM,
+        id,
+
+    }
+}
+
+export const addItem = (obj, priceOfBread) => {
+    return {
+        type: actionTypes.ADD_ITEM,
         obj
     }
+    updateCurrentOrderPrice(priceOfBread)
 }
 
-export const deleteItemSelected = (unique) => {
+export const deleteItemSelected = (unique, priceOfBread) => {
     return {
-        type: actionCreators.DELETE_ITEM_SELECTED,
+        type: actionTypes.DELETE_ITEM_SELECTED,
         unique
     }
+    updateCurrentOrderPrice(priceOfBread)
 }
+
